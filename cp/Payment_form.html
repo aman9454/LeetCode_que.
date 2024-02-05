@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylsheet" href="style.css">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+   input[type="text"],
+   input[type="email"],
+   input[type="number"],
+   input[type="pasword"],
+   input[type="date"],
+   select
+   textarea{
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px ;
+    margin: 10px;
+   }
+   fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+   }
+   .main_headding{
+    text-align: center;
+   }
+   input[type="submit"]{
+    background-color: rgb(88, 238, 195);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+   }
+   input[type="submit"]:hover{
+    background-color: aqua;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action"">
+        <h1 class="main_headding"> Payment Form</h1>
+        <h2>Contact Information </h2>
+        <p>Name:  <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male  <input type="radio" name="Gender" id="male" required>
+                Female  <input type="radio" name="Gender" id="female"
+            </p>
+        </fieldset>
+        <p>Address: <textarea  name="address" id="address" cols="100" rows="8"></textarea></p>
+        <p>Email: <input type="email" name="email" id="email" required</p>
+        <p>Pincode:  <input type="number" name="Pincode" id="Pincode" required</p>
+        <h2> Payment Information  </h2>
+        <p>Card type:
+            <select name="card_type" id="card_type">
+                <option value="">--Select a card_type--<</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>
+            Card number <input type="password" name="card_number" id="card_number">
+        </p>
+        <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"</p>
+        <p> CVV *<input type="password" name="cvv" id="cvv" required</p>
+        <p><input type="submit" value="Pay Now"></p>
+    </form></div>
+
+</body>
+</html>
