@@ -1,3 +1,3 @@
 LeetCode Basics Questions
 
-Author - AMAN SINGH;
+Author - AMAN SINGH
